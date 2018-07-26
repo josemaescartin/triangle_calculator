@@ -1,6 +1,12 @@
 var triangle = function(side1, side2, side3) {
     var output = [];
-    if (side1 >= side2 + side3 || side2 >= side1 + side3 || side3 >= side1 + side2) {
+    //Metemos un error en el código
+    if (side1 == side2 && side2 == side3 && side2<=20 && side2>=10) {
+        window.alert("buuug")
+        output.push("BUG");
+    }
+
+    else if (side1 >= side2 + side3 || side2 >= side1 + side3 || side3 >= side1 + side2) {
         output.push("This is not a triangle!");
     }
 
